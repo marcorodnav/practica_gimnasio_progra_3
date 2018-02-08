@@ -25,7 +25,7 @@
                     <asp:ImageButton ID="btn_clientes" runat="server" Height="100px" ImageUrl="~/imagenes/img_clientes1.jpg" Width="100px" />
                 </td>
                 <td class="auto-style2">
-                    <asp:ImageButton ID="btn_rutinas" runat="server" Height="100px" ImageUrl="~/imagenes/img_rutinas1.jpg" Width="100px" />
+                    <asp:ImageButton ID="btn_rutinas" runat="server" Height="100px" ImageUrl="~/imagenes/img_rutinas1.jpg" Width="100px" OnClick="btn_rutinas_Click" />
                 </td>
             </tr>
             <tr>
@@ -37,6 +37,8 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        <br />
+        <asp:Button ID="BtnVolver" runat="server" OnClick="BtnVolver_Click" Text="Volver" />
     </div>
     </form>
 </body>

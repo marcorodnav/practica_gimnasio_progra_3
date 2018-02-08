@@ -13,5 +13,15 @@ namespace GimnasioUpi
         {
 
         }
+
+        protected void BtnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("./Default.aspx");
+        }
+
+        protected void btn_rutinas_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("./Rutinas.aspx");
+        }
     }
 }

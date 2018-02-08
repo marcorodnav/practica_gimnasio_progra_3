@@ -25,13 +25,13 @@
             </tr>
             <tr>
                 <td class="auto-style2">
-                    <asp:ImageButton ID="btn_catalogo" runat="server" Height="100px" ImageUrl="~/imagenes/img_fichero1.jpg" Width="100px" />
+                    <asp:ImageButton ID="btn_catalogo" runat="server" Height="100px" ImageUrl="~/imagenes/img_fichero1.jpg" OnClick="btn_catalogo_Click" Width="100px" />
                 </td>
                 <td class="auto-style2">
                     <asp:ImageButton ID="btn_reportes" runat="server" Height="100px" ImageUrl="~/imagenes/img_reporte1.jpg" Width="100px" />
                 </td>
                 <td class="auto-style2">
-                    <asp:ImageButton ID="btn_salir" runat="server" Height="100px" ImageUrl="~/imagenes/img_inicio1.jpg" Width="100px" />
+                    <asp:ImageButton ID="btn_salir" runat="server" Height="100px" ImageUrl="~/imagenes/img_inicio1.jpg" OnClick="btn_salir_Click" Width="100px" />
                 </td>
             </tr>
             <tr>
