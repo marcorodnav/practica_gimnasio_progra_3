@@ -10,60 +10,69 @@
 namespace GimnasioUpi {
     
     
-    public partial class MasterGym {
+    public partial class Clientes {
         
         /// <summary>
-        /// head control.
+        /// gridViewClientes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.GridView gridViewClientes;
         
         /// <summary>
-        /// form1 control.
+        /// TxtNombreCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox TxtNombreCliente;
         
         /// <summary>
-        /// btn_catalogo control.
+        /// TxtEdadCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_catalogo;
+        protected global::System.Web.UI.WebControls.TextBox TxtEdadCliente;
         
         /// <summary>
-        /// btn_reportes control.
+        /// BtnAgrearCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_reportes;
+        protected global::System.Web.UI.WebControls.Button BtnAgrearCliente;
         
         /// <summary>
-        /// btn_salir control.
+        /// BtnModificarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_salir;
+        protected global::System.Web.UI.WebControls.Button BtnModificarCliente;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// BtnBorrarCliente control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button BtnBorrarCliente;
+        
+        /// <summary>
+        /// gimnasioDataSource control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.SqlDataSource gimnasioDataSource;
     }
 }

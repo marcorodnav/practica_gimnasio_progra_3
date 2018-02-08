@@ -7,13 +7,46 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="3" style="text-align: center">GIMNASIO UNIVERSIDAD POLITECNICA INTERNACIONAL</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:ImageButton ID="btn_catalogo" runat="server" Height="100px" ImageUrl="~/imagenes/img_fichero1.jpg" Width="100px" />
+                </td>
+                <td class="auto-style2">
+                    <asp:ImageButton ID="btn_reportes" runat="server" Height="100px" ImageUrl="~/imagenes/img_reporte1.jpg" Width="100px" />
+                </td>
+                <td class="auto-style2">
+                    <asp:ImageButton ID="btn_salir" runat="server" Height="100px" ImageUrl="~/imagenes/img_inicio1.jpg" Width="100px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">CATALOGO</td>
+                <td class="auto-style2">REPORTES</td>
+                <td class="auto-style2">SALIR</td>
+            </tr>
+        </table>
+        <br />
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
+        <div class="auto-style2">
+            <br />
+            DERECHOS RESERVADOS UPI 2018</div>
     </div>
     </form>
 </body>

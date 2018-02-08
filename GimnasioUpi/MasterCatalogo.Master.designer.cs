@@ -10,7 +10,7 @@
 namespace GimnasioUpi {
     
     
-    public partial class MasterGym {
+    public partial class MasterCatalogo {
         
         /// <summary>
         /// head control.
@@ -31,31 +31,22 @@ namespace GimnasioUpi {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// btn_catalogo control.
+        /// btn_clientes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_catalogo;
+        protected global::System.Web.UI.WebControls.ImageButton btn_clientes;
         
         /// <summary>
-        /// btn_reportes control.
+        /// btn_rutinas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_reportes;
-        
-        /// <summary>
-        /// btn_salir control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_salir;
+        protected global::System.Web.UI.WebControls.ImageButton btn_rutinas;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

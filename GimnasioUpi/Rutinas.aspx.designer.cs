@@ -10,60 +10,60 @@
 namespace GimnasioUpi {
     
     
-    public partial class MasterGym {
+    public partial class Rutinas {
         
         /// <summary>
-        /// head control.
+        /// gridViewRutinas control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.GridView gridViewRutinas;
         
         /// <summary>
-        /// form1 control.
+        /// TxtNombreRutina control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox TxtNombreRutina;
         
         /// <summary>
-        /// btn_catalogo control.
+        /// BtnAgregarRutina control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_catalogo;
+        protected global::System.Web.UI.WebControls.Button BtnAgregarRutina;
         
         /// <summary>
-        /// btn_reportes control.
+        /// BtnModificarRutina control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_reportes;
+        protected global::System.Web.UI.WebControls.Button BtnModificarRutina;
         
         /// <summary>
-        /// btn_salir control.
+        /// BtnBorrarRutina control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton btn_salir;
+        protected global::System.Web.UI.WebControls.Button BtnBorrarRutina;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// rutinasDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.SqlDataSource rutinasDataSource;
     }
 }
