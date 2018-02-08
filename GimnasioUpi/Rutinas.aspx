@@ -12,14 +12,32 @@
                     </Columns>
                 </asp:GridView>
             </td>
-            <td>Nombre:
+            <td>Id:
+                <asp:TextBox ID="TxtIdRutina" runat="server"></asp:TextBox>
+                <br />
+                Nombre:
                 <asp:TextBox ID="TxtNombreRutina" runat="server"></asp:TextBox>
                 <br />
-                <asp:Button ID="BtnAgregarRutina" runat="server" Text="Agregar" />
-                <asp:Button ID="BtnModificarRutina" runat="server" Text="Modificar" />
-                <asp:Button ID="BtnBorrarRutina" runat="server" Text="Borrar" />
+                <asp:Button ID="BtnAgregarRutina" runat="server" Text="Agregar" OnClick="BtnAgregarRutina_Click" />
+                <asp:Button ID="BtnModificarRutina" runat="server" Text="Modificar" OnClick="BtnModificarRutina_Click" />
+                <asp:Button ID="BtnBorrarRutina" runat="server" Text="Borrar" OnClick="BtnBorrarRutina_Click" />
             </td>
         </tr>
     </table>
-    <asp:SqlDataSource ID="rutinasDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString %>" SelectCommand="SELECT * FROM [RUTINA]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="rutinasDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:UPIConnectionString %>" SelectCommand="SELECT * FROM [RUTINA]" DeleteCommand="DELETE FROM RUTINA
+WHERE ID_RUTINA = @ID_BORRAR" InsertCommand="INSERT INTO RUTINA
+VALUES (@NOMBRE)" UpdateCommand="UPDATE RUTINA
+SET NOMBRE = @NOMBRE
+WHERE ID_RUTINA = @ID_MODIFICAR">
+        <DeleteParameters>
+            <asp:ControlParameter ControlID="TxtIdRutina" Name="ID_BORRAR" PropertyName="Text" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:ControlParameter ControlID="TxtNombreRutina" Name="NOMBRE" PropertyName="Text" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:ControlParameter ControlID="TxtNombreRutina" Name="NOMBRE" PropertyName="Text" />
+            <asp:ControlParameter ControlID="TxtIdRutina" Name="ID_MODIFICAR" PropertyName="Text" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>

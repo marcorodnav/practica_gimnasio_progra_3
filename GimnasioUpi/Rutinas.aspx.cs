@@ -13,5 +13,20 @@ namespace GimnasioUpi
         {
 
         }
+
+        protected void BtnAgregarRutina_Click(object sender, EventArgs e)
+        {
+            rutinasDataSource.Insert();
+        }
+
+        protected void BtnModificarRutina_Click(object sender, EventArgs e)
+        {
+            rutinasDataSource.Update();
+        }
+
+        protected void BtnBorrarRutina_Click(object sender, EventArgs e)
+        {
+            rutinasDataSource.Delete();
+        }
     }
 }

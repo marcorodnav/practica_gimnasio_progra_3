@@ -22,6 +22,15 @@ namespace GimnasioUpi {
         protected global::System.Web.UI.WebControls.GridView gridViewClientes;
         
         /// <summary>
+        /// TxtIdCliente control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtIdCliente;
+        
+        /// <summary>
         /// TxtNombreCliente control.
         /// </summary>
         /// <remarks>
